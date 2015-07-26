@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var map = {
+        };
+
+        var nextId = 1;
+
+        function register(key, value) {
+            if (!key.hasOwnProperty("$$guid")) {
+                key.$$guid = nextId++;
+            }
+
+            map[key.$$guid] = value;
+        }
+
+        function resolve(key) {
+            if (!key.hasOwnProperty("$$guid")) {
+                return null;
+            }
+
+            return map[key.$$guid];
+        }
+
+        var x = {};
+        var y = {};
+        var z = {};
+
+        register(x, y);
+        register(z, y);
+
+        console.log(resolve(z) == y);
+    </script>
+</body>
+</html>

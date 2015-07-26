@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function f(obj) {
+            obj.value = "XXX";
+        }
+
+        var str = "ABC";
+        var obj = { value: str };
+        f(obj);
+
+        console.log(str);
+    </script>
+</body>
+</html>

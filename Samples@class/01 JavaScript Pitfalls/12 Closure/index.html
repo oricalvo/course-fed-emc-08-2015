@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        function getCounter() {
+            var num = 0;
+
+            function inc() {
+                return ++num;
+            }
+
+            return inc;
+        }
+
+        var f1 = getCounter();
+        var f2 = getCounter();
+        console.log(f1 == f2);
+    </script>
+</body>
+</html>

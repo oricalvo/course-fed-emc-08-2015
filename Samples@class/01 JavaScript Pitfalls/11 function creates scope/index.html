@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        //for (var i = 0; i < 100; i++) {
+        //    setTimeout(function () {
+        //        console.log("XXX");
+        //    }, 0);
+
+        //    console.log("run");
+        //}
+
+        runManyTasks();
+
+        function runManyTasks() {
+            var i;
+
+            for (i = 0; i < 10; i++) {
+                (function (i) {
+
+                    runTask(function () {
+                        console.log("Task " + i + " completed");
+                    });
+
+                })(i);
+
+            }
+        }
+
+        function runTask(callback) {
+            setTimeout(function () {
+                callback();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
