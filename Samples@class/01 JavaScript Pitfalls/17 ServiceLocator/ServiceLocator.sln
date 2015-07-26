@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{951EF55F-F890-486D-89A5-DA4A3B8A8DCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator", "ServiceLocator\ServiceLocator.csproj", "{99A4358A-A959-4AFE-8D6F-23CE93E7FF8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{951EF55F-F890-486D-89A5-DA4A3B8A8DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{951EF55F-F890-486D-89A5-DA4A3B8A8DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{951EF55F-F890-486D-89A5-DA4A3B8A8DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{951EF55F-F890-486D-89A5-DA4A3B8A8DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A4358A-A959-4AFE-8D6F-23CE93E7FF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A4358A-A959-4AFE-8D6F-23CE93E7FF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A4358A-A959-4AFE-8D6F-23CE93E7FF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A4358A-A959-4AFE-8D6F-23CE93E7FF8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

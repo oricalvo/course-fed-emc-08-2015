@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{951EF55F-F890-486D-89A5-DA4A3B8A8DCB}</ProjectGuid>
+    <ProjectGuid>{2ED05AE5-9631-48AB-9BE6-11F512EC5FBB}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApplication1</RootNamespace>
-    <AssemblyName>WebApplication1</AssemblyName>
+    <RootNamespace>CJSModules</RootNamespace>
+    <AssemblyName>CJSModules</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -65,7 +65,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="module1.js" />
+    <Content Include="App.js" />
     <Content Include="index.html" />
+    <Content Include="system.src.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,9 +87,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>57255</DevelopmentServerPort>
+          <DevelopmentServerPort>57488</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57255/</IISUrl>
+          <IISUrl>http://localhost:57488/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

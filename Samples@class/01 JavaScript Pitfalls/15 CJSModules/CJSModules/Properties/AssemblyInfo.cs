@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WebApplication1")]
+[assembly: AssemblyTitle("CJSModules")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP")]
-[assembly: AssemblyProduct("WebApplication1")]
+[assembly: AssemblyProduct("CJSModules")]
 [assembly: AssemblyCopyright("Copyright © HP 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b9d1c3bb-744c-44b8-ae59-86e3aeb314a7")]
+[assembly: Guid("3f004882-d1c1-4cdb-8a39-84f7f85aec0e")]
 
 // Version information for an assembly consists of the following four values:
 //
