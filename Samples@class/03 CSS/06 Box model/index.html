@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .child {
+            width: 100px;
+            height: 200px;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+            .child:hover {
+                /*border: 4px solid black;*/
+                outline: 4px solid black;
+                position: relative;
+            }
+
+        .child1 {
+            background-color: blue;
+        }
+
+        .child2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1 child"></div><div class="child2 child"></div>
+    </div>
+</body>
+</html>

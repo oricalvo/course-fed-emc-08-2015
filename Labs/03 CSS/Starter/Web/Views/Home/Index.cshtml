@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div data-view="BookView">
+        <div class="header">
+            <span class="title">
+                Contact Book
+            </span>
+            <div class="menu">
+                <span class="add-contact">
+                    New Contact
+                </span>
+                <span class="add-group">
+                    New Group
+                </span>
+            </div>
+        </div>
+
+        <div class="content">
+            <ul class="items-view" data-view="ItemsView">
+                <li>
+                    <div class="selection">
+                        <input type="checkbox" />
+                    </div>
+                    <span class="title">Friends</span>
+                </li>
+
+                <li>
+                    <div class="selection">
+                        <input type="checkbox" />
+                    </div>
+                    <span class="title">Family</span>
+                </li>
+
+                <li>
+                    <div class="selection">
+                        <input type="checkbox" />
+                    </div>
+                    <span class="title">Co-Workers</span>
+                </li>
+
+                <li>
+                    <div class="selection">
+                        <input type="checkbox" />
+                    </div>
+                    <span class="title">Ori</span>
+                    <span class="sub-title">ori@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <span class="copyright">&copy; 2012 Contact Book</span>
+        </div>
+    </div>
+
+    <script src="@Url.Content("~/Scripts/Lib/jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Lib/knockout.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/Common/Extensions.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Common/Logger.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/Models/BookItem.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Models/Contact.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Models/Group.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Models/Book.js")" type="text/javascript"></script>
+</body>
+</html>

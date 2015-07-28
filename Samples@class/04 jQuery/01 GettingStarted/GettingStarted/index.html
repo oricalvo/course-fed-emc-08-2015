@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .target {
+            width: 10em;
+            height: 10em;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <span>ABC</span>
+    <button>Click me</button>
+
+    <div class="target"></div>
+
+    <script src="jquery.js"></script>
+    <script>
+
+        (function ($) {
+            $("button").on("click", function () {
+                alert("Clicked");
+            });
+
+            setTimeout(function () {
+                //$("span").text("XXX");
+
+                //var button = $("<button>Click me</button>");
+                //$("body").append(button);
+
+                $(".target").append($("button"));
+
+            }, 1000);
+        })(jQuery);
+    </script>
+</body>
+</html>
