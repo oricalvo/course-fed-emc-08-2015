@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <button class="get">Get Data</button>
+    <button class="post">Post Data</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $("button.get").on("click", function () {
+            $.ajax({
+                url: "/contacts.html",
+                type: "GET",
+                dataType: "json",
+                success: function (data, textStatus, xhr) {
+                    console.log("SUCCESS");
+                    console.log(typeof data);
+
+                    //var contacts = JSON.parse(data);
+                    //contacts.forEach(function (contact) {
+                    //    console.log(contact.id + ", " + contact.name);
+                    //});
+
+                    console.log("%O", xhr);
+                },
+                error: function () {
+                    console.log("ERROR");
+                },
+                cache: false,
+            });
+        });
+
+        $("button.post").on("click", function () {
+            $.ajax({
+                url: "/contacts.html",
+                type: "POST",
+                data: { id: 1, name: "Ori" },
+                success: function () {
+                    console.log("SUCCESS");
+                },
+                error: function () {
+                    console.log("ERROR");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
