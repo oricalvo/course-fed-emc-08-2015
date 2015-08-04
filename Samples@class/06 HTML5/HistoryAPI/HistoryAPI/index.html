@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .view {
+            display: none;
+        }
+
+        .view.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="view active home" data-url="/home">
+        <h1>Home</h1>
+
+        <a href="/about">About</a>
+    </div>
+
+    <div class="view about" data-url="/about">
+        <h1>About</h1>
+
+        <a href="/home">Home</a>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <span></span>
+
+    <button>Inc</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        var storage = localStorage;
+        var span = $("span");
+        var counter = storage.getItem("counter") || 0;
+
+        $("button").click(function () {
+            ++counter;
+
+            storage.setItem("counter", counter);
+
+            updateUI();
+        });
+
+        function updateUI() {
+            span.text(counter);
+        }
+
+        updateUI();
+    </script>
+</body>
+</html>

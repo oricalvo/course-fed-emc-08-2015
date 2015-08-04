@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script src="jquery.js"></script>
+
+    <script>
+        $.ajax({
+            url: "http://localhost:59705/contacts.html",
+            type: "GET",
+            dataType: "json",
+            success: function (contacts) {
+                console.log("SUCCESS");
+
+                console.log(contacts);
+            },
+            error: function () {
+                console.log("ERROR");
+            },
+            jsonpCallback: "g",
+        });
+    </script>
+</body>
+</html>
