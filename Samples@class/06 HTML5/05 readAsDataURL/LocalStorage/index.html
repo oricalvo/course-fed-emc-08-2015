@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        input[type=file] {
+            display: none;
+        }
+
+        img {
+            width: 10em;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" multiple />
+    <button>Browse</button>
+    <img />
+
+    <script src="jquery.js"></script>
+    <script>
+        var input = $("input");
+
+        $("button").click(function () {
+            input.trigger("click");
+        });
+
+        input.on("change", function (e) {
+            console.log("CHANGE");
+
+            console.log("%O", e);
+
+            var file = e.target.files[0];
+
+            var fileReader = new FileReader();
+            fileReader.readAsDataURL(file);
+
+            fileReader.addEventListener("load", function (e) {
+                var contentEncodedAsBase64 = e.target.result;
+
+                console.log(contentEncodedAsBase64);
+
+                $("img").attr("src", contentEncodedAsBase64);
+            });
+
+            e.target.value = "";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="SiteMenuCtrl">
+        <a href="#" ng-click="router.goto('home')">Home</a>
+        <a href="#" ng-click="router.goto('newContact')">New Contact</a>
+    </div>
+
+    <div ng-controller="HomeCtrl" ng-show="router.page=='home'">
+        <h1>Home</h1>
+
+        Name: <input ng-model="name" />
+        <button ng-click="add()">Add</button>
+        <button ng-click="page='newContact'">Change</button>
+
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <span>{{contact.name}}</span>
+                <button ng-click="remove($index)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <div ng-controller="NewContactCtrl" ng-show="router.page=='newContact'">
+        <h1>New Contact</h1>
+    </div>
+
+    <script src="angular.js"></script>
+
+    <script src="App.js"></script>
+
+    <script src="Router.js"></script>
+
+    <script src="HomeCtrl.js"></script>
+    <script src="NewContactCtrl.js"></script>
+    <script src="SiteMenuCtrl.js"></script>
+</body>
+</html>

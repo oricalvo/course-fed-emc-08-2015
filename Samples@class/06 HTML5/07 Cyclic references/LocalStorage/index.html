@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <button>Create Worker</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $("button").on("click", function () {
+            var contact1 = { id: 1 };
+            var contact2 = { id: 2 };
+
+            contact1.sibling = contact2;
+            contact2.sibling = contact1;
+
+            JSON.stringify(contact1);
+        });
+
+
+    </script>
+</body>
+</html>

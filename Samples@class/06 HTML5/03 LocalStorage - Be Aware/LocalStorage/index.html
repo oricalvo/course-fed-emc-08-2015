@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <span></span>
+
+    <button>Inc</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        function Point(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        Point.prototype.dump = function () {
+            console.log(this.x + ", " + this.y);
+        }
+
+        var points = [new Point(1, 2), new Point(2, 3)];
+
+        localStorage.setItem("points", JSON.stringify(points));
+        points = JSON.parse(localStorage.getItem("points"));
+
+        points = points.map(function (data) {
+            return new Point(data.x, data.y);
+        });
+
+        points.forEach(function (point) {
+            point.dump();
+        });
+    </script>
+</body>
+</html>

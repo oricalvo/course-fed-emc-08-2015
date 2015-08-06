@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <button>Create Worker</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $("button").on("click", function () {
+            var worker = new Worker("/Task.js");
+
+            var command = { type: "isPrime", num: 10 };
+            worker.postMessage(command);
+
+            worker.addEventListener("message", function (e) {
+                var response = e.data;
+
+                console.log(response.result);
+            });
+        });
+
+
+    </script>
+</body>
+</html>

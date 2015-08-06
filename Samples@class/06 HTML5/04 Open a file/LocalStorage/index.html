@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        input[type=file] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" multiple />
+    <button>Browse</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        var input = $("input");
+
+        $("button").click(function () {
+            input.trigger("click");
+        });
+
+        input.on("change", function (e) {
+            console.log("%O", e);
+
+            var files = e.target.files;
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+
+                console.log(file.name);
+            }
+        });
+    </script>
+</body>
+</html>
