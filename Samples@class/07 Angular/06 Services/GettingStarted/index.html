@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="ContactNewCtrl">
+        Name: <input ng-model="name" />
+        <button ng-click="add()">Add</button>
+    </div>
+
+    <div ng-controller="ContactIndexCtrl">
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <label>
+                    <input type="checkbox" ng-model="contact.selected" />
+                    <span>{{contact.name}}</span>
+                </label>
+            </li>
+        </ul>
+
+        <button ng-click="remove()">Delete</button>
+    </div>
+
+    <script src="angular.js"></script>
+
+    <script src="App.js"></script>
+
+    <script src="ContactService.js"></script>
+
+    <script src="ContactNewCtrl.js"></script>
+    <script src="ContactIndexCtrl.js"></script>
+</body>
+</html>
