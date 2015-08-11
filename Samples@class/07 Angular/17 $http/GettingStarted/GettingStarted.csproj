@@ -68,10 +68,9 @@
     <Content Include="angular.js" />
     <Content Include="App.js" />
     <Content Include="ContactService.js" />
-    <Content Include="ContactNewCtrl.js" />
-    <Content Include="ContactIndexCtrl.js" />
+    <Content Include="HomeCtrl.js" />
+    <Content Include="contacts.html" />
     <Content Include="index.html" />
-    <Content Include="jquery.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

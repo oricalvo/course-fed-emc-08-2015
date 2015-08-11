@@ -46,6 +46,11 @@
         }
     }
 
-    angular.module("MyApp").controller("ContactIndexCtrl", ContactIndexCtrl);
+    angular.module("MyApp").controller("ContactIndexCtrl",
+        [
+            "$scope", 
+            "contactService",
+            ContactIndexCtrl
+        ]);
 
 })();

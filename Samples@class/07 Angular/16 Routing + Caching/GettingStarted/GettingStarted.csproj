@@ -65,13 +65,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="angular-route.js" />
     <Content Include="angular.js" />
     <Content Include="App.js" />
-    <Content Include="ContactService.js" />
-    <Content Include="ContactNewCtrl.js" />
-    <Content Include="ContactIndexCtrl.js" />
+    <Content Include="AboutCtrl.js" />
+    <Content Include="About.html" />
+    <Content Include="HomeCtrl.js" />
+    <Content Include="Home.html" />
     <Content Include="index.html" />
-    <Content Include="jquery.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

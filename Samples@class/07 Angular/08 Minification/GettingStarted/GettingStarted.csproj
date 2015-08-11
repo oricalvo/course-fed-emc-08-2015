@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="angular.js" />
     <Content Include="App.js" />
+    <Content Include="ContactIndexCtrl.min.js" />
     <Content Include="ContactService.js" />
     <Content Include="ContactNewCtrl.js" />
     <Content Include="ContactIndexCtrl.js" />
